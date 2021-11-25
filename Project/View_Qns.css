@@ -1,0 +1,160 @@
+*{
+    margin : 0px;
+    padding:0px;
+}
+body{
+    background-image: url(images/dashback.jpg);
+    background-size:cover;
+    font-family: cambria;
+}
+.logo{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.logo a{
+    float:right;
+    margin: 2px;
+    margin-top :50px;
+}
+.logo_img{
+    margin:10px 10px;
+}
+.logo_img2{
+    margin-bottom:30px;
+}
+.navigation{
+    background-color: rgb(172, 0, 0);
+    color:white;
+    font-size: 25px;
+}
+.navigation ul{
+    list-style-type: none;
+    display:inline-flex;
+}
+.navigation ul li{
+    padding: 10px 20px;
+}
+.navigation ul li i{
+    margin:0px 8px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:white;
+}
+.navigation ul li:hover , .act{
+    background-color: rgb(255, 62, 62);
+}
+.navigation input{
+    float:right;
+    font-size:18px;
+    border:none;
+    padding: 10px 20px;
+    margin:4px 8px;
+    border-radius: 8px;
+    color:rgb(172, 0, 0);
+    font-weight: bold;
+}
+.navigation input:hover{
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.sub_nav{
+    display: none;
+}
+.navigation ul li:hover .sub_nav{
+    background-color:rgb(172, 0, 0) ;
+    display:block;
+    position: absolute;
+    height: auto;
+    margin:10px;
+    padding:10px;
+}
+.navigation ul li:hover .sub_nav ul{
+    display: block;
+}
+.navigation ul li:hover .sub_nav ul li{
+    font-size: 22px;
+    padding:5px;
+    margin:10px;
+    border-bottom:1px solid white;
+}
+/*
+    Now fro here all the work will start
+*/
+.view{
+    text-align: center;
+    margin:50px;
+    font-size: 30px;;
+    padding:10px 20px;
+    background-color: rgb(219, 205, 205);
+    border-radius:10px;
+    font-weight:bold;
+}
+.view input {
+    font-size:22px;
+    outline:none;
+    border:1.5px solid rgb(172, 0, 0);
+    padding:5px 30px;
+    border-radius:10px;
+    margin:0px 10px;
+    font-weight:bold;
+    color:rgb(172, 0, 0);
+}
+.view input[type = "button"]:hover{
+    background-color:rgb(172, 0, 0);
+    color:white;
+}
+.view input[type = "button"]:active{
+    background-color:white;
+}
+/*Now Content displaying css*/
+.cont{
+    text-align: center;
+    display: none;
+    margin-bottom: 30px;
+    width:100%;
+}
+.cont table{
+    margin:20px;
+    font-size:16px;
+    text-align:center;
+    background-color: rgb(189, 253, 255);
+}
+.cont table th, td{
+    padding:10px 10px;
+}
+.cont table th::selection, td::selection{
+    color:red;
+    background-color: yellow;
+}
+.cont a{
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 18px;
+    border-radius:4px;
+    padding:5px 15px;
+}
+.cont #del{
+    color:white;    
+    background-color: rgb(172, 0, 0);
+    border:1px solid rgb(172, 0, 0);
+}
+.cont #del:hover{
+    color:rgb(172, 0, 0);
+    background-color: white;
+}
+.cont #del:active{
+    color:white;
+}
+.cont #upd{
+    color:white;
+    background-color:green;
+    border:1px solid green;
+}
+.cont #upd:hover{
+    color:green;
+    background-color:white;
+}
+.cont #upd:active{
+    color:white;
+}

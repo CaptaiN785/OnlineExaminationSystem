@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   		 <title>Login Page</title>
+	    <link rel="stylesheet" href="login.css">
+
+	</head>
+	<body>
+		<div class = "logo">
+            <img class = "logo_img" src = "images/culogo.png" alt = "Logo not found">
+            <img class = "logo_img2" src = "images/naac-logo.png" alt = "Logo not found">
+        </div>
+		<div class="login-form">
+			<h1>Login Here</h1>
+			<form action = "login.php" method = "POST" autocomplete="off">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit" value = "Login" onclick="home()">
+			</form>
+		</div>
+	</body>
+</html>

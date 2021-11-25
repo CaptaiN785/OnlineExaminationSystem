@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+<style>
+        body{
+        font-size: 20px;
+        font-family: Alternate Gothic;
+        background-image:linear-gradient(0deg, rgb(238, 152, 152), rgb(161, 235, 222));
+        }
+        #container{
+            margin : 20px auto;
+            background-color: white;
+            height: 700px;
+            width : 1100px;
+           
+            text-align: center; 
+            border-radius: 5px;
+            box-shadow: 0px 5px 15px 0px;
+            position: relative;
+
+        }
+        #inst{
+            width : 900px;
+            height: 500px;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            text-align: left; 
+
+        }
+        #start{
+            font-size: 1em;
+            width:400px;
+            height:40px;
+            position: absolute;
+            bottom: 20px;
+            left: 400px;
+          
+            font-weight: bolder;
+            word-break: break-all;
+            border : 2px solid lightgrey;
+            cursor: pointer;
+            color : grey;
+        }
+        #start:hover{
+            border: 3px solid lightseagreen;
+            color : lightseagreen;
+        }
+
+        </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="inst">
+            <b> General instructions: <b>
+
+        <ol>
+          <li>Make sure you appear for the online exam sitting alone in a well lit room with no background noise during the entire process of the exam.</li><br>
+          <li>For subjects that requires rough work, make sure you do the rough works on blank sheet and not on any notebook.</li><br>
+          <li>Make sure your device (mobile/tab/laptop/desktop) is ready and at your disposal for appearing for the online exam</li><br>
+          <li>Make sure you have a good and stable internet connection. </li><br>
+          <li>Make sure you DO NOT open any other link/tab on your browser apart from the exam link during the online exam. </li><br>
+          <li>Keep an eye on the TIMER CLOCK on bottom left of the online exam page of the browser to keep a track of the time left.</li><br>
+          <li>Do not resize or minimise the browser during the online exam.</li><br>
+          <li>Do not close the browser during the test before your exam is complete.</li><br>
+          <li>Once submitted, a message shall be displayed “Your Exam has been submitted successfully’ and you  can logout from the student online portal.</li><br>
+
+        </ol>
+        </div> 
+           <input id="start" type="submit" value="Click to start you examination" onclick = "func()">  
+          <script>
+              var id = window.location.hash.substring(1);
+            function func(){
+              window.location.href = "main.php?ex_id="+ id;
+            }
+          </script>
+         
+
+    </div>
+</body>
+</html>

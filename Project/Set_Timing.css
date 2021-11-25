@@ -1,0 +1,131 @@
+*{
+    margin : 0px;
+    padding:0px;
+}
+body{
+    background-image: url(images/dashback.jpg);
+    background-size:cover;
+    font-family: cambria;
+}
+.logo{
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.logo a{
+    float:right;
+    margin: 2px;
+    margin-top :50px;
+}
+.logo_img{
+    margin:10px 10px;
+}
+.logo_img2{
+    margin-bottom:30px;
+}
+.navigation{
+    background-color: rgb(172, 0, 0);
+    color:white;
+    font-size: 25px;
+}
+.navigation ul{
+    list-style-type: none;
+    display:inline-flex;
+}
+.navigation ul li{
+    padding: 10px 20px;
+}
+.navigation ul li i{
+    margin:0px 8px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:white;
+}
+.navigation ul li:hover , .act{
+    background-color: rgb(255, 62, 62);
+}
+.navigation input{
+    float:right;
+    font-size:18px;
+    border:none;
+    padding: 10px 20px;
+    margin:4px 8px;
+    border-radius: 8px;
+    color:rgb(172, 0, 0);
+    font-weight: bold;
+}
+.navigation input:hover{
+    background-color: red;
+    color:white;
+    border:1px solid white;
+}
+.sub_nav{
+    display: none;
+}
+.navigation ul li:hover .sub_nav{
+    background-color:rgb(172, 0, 0) ;
+    display:block;
+    position: absolute;
+    height: auto;
+    margin:10px;
+    padding:10px;
+}
+.navigation ul li:hover .sub_nav ul{
+    display: block;
+}
+.navigation ul li:hover .sub_nav ul li{
+    font-size: 22px;
+    padding:5px;
+    margin:10px;
+    border-bottom:1px solid white;
+}
+/*
+    Now fro here all the work will start
+*/
+.set{
+    width:450px;
+    height:380px;
+    text-align: center;
+    left:50%;
+    margin-top:50px;
+    font-size: 20px;;
+    margin-left:30%;
+}
+.set table{
+    margin:20px;
+    padding:20px;;
+    width:100%;
+    height:100%;
+    font-size:20px;
+    text-align: left;
+    border-radius:10px;
+    background-image: linear-gradient(to bottom ,rgba(243, 199, 199, 0.671), rgba(194, 194, 240, 0.815));
+}
+.set table th, td{
+    padding:10px;
+}
+.set table th p{
+    text-align:center;
+    font-size:30px;
+}
+.set table input{
+    width:100%;
+    padding:10px;
+    text-align: center;
+    font-size:18px;
+    font-weight:bold;
+    font-family: sans-serif;
+    outline:none;
+    border:none;
+    background:none;
+    border-bottom:2px solid red;
+}
+.set table tr th input[type = "submit"]{
+    padding: 10px;
+    border:2px solid rgb(172, 0, 0);
+    color: rgb(172, 0, 0);
+    border-radius:5px;
+}
+.set table tr th input[type = "submit"]:hover{
+    background-color: rgb(172, 0, 0);
+    color:white;
+}
